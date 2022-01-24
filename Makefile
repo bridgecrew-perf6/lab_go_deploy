@@ -1,6 +1,9 @@
 include .env
-export $(shell sed 's/=.*//' .env)
 
+#export $(shell sed 's/=.*//' .env)
+
+test:
+	./scripts/test.sh
 
 up:
 	./scripts/up.sh
