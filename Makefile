@@ -1,10 +1,12 @@
 include .env
 export $(shell sed 's/=.*//' .env)
 
-all:
-	make clean
-	make build
-	make run
+
+up:
+	./scripts/up.sh
+
+down:
+	./scripts/down.sh
 
 clean:
 	./scripts/clean.sh
